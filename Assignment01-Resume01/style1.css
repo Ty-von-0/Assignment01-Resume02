@@ -1,0 +1,130 @@
+/* ------------------------------
+   GLOBAL STYLES
+--------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+/* Accent color for tech feel */
+:root {
+    --accent: #00c2ff;
+    --card-bg: #161b22;
+    --border: #30363d;
+}
+
+/* ------------------------------
+   HEADER
+--------------------------------*/
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+    margin-top: 0.5rem;
+}
+
+/* ------------------------------
+   CONTAINER + SECTIONS
+--------------------------------*/
+.container {
+    max-width: 900px;
+    margin: 2.5rem auto;
+}
+
+section {
+    background: var(--card-bg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect for modern feel */
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 194, 255, 0.15);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+    border-left: 4px solid var(--accent);
+    padding-left: 0.6rem;
+}
+
+/* ------------------------------
+   LISTS
+--------------------------------*/
+ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+ul li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #22272e;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* ------------------------------
+   LINKS
+--------------------------------*/
+a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    opacity: 0.6;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+--------------------------------*/
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
